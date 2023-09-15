@@ -8,14 +8,7 @@ import { summarize } from "./summarize.js"
 
 const app = express()
 app.use(express.json())
-
-// Configuração específica do CORS
-const corsOptions = {
-  origin: 'https://aisummarizegf.netlify.app',
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-}
-
-app.use(cors(corsOptions))
+app.use(cors())
 
 app.get("/summary/:id", async (request, response) => {
   try {
