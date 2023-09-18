@@ -46,4 +46,4 @@ app.post("/summary", async (request, response) => {
   }
 });
 
-app.listen(3333, () => console.log("Server is running GF"));
+app.listen(process.env.PORT || 3333, () => console.log("Server is running GF"));
