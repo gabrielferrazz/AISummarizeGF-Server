@@ -7,7 +7,7 @@
     "server": "env YTDL_NO_UPDATE=1 node server/index.js"
   },
   "engines": {
-    "node": ">=18.17.1"
+    "node": ">=20.6.1"
   },
   "dependencies": {
     "@xenova/transformers": "^2.6.0",
